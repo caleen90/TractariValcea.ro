@@ -4,15 +4,34 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+html{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background: rgb(60, 139, 224);
+}
+body {
+  margin: 0;
+
+  /*recommend 1920 / 1080 max based on usage stats, use 100% to that point*/
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+}
+
 .logo img{
   height: 50px;
 }
+
 
 .container{
 /*linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7))*/
   /*width: 100%;*/
   /*max-height: 100vh;*/
   background-color: white;
+  max-width: 1000px;
+  align-items: center;
 }
 
 nav {
@@ -24,7 +43,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgba(76, 169, 4, 0.7);
+  background-color: rgb(60, 139, 224);
 }
 .nav-links {
   display: flex;
@@ -111,23 +130,24 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
   color: white;
   background-image: url("img/tractoras.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 /* Buton telefon*/
 .phone img {
   height: 10vh;
 }
 .phone {
-  cursor: pointer;
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  cursor: pointer;
   padding-top: 50px;
 }
 .phone a{
+  display: flex;
   text-decoration: none;
   color: white;
 }
