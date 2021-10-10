@@ -266,6 +266,16 @@ nav {
     text-align: center;
   }
 
+  .bottom-bar h6{
+    color: white;
+    text-decoration: underline white;
+    padding-bottom: 15px;
+  }
+
+  .bottom-bar ul{
+    text-align: center;
+  }
+
 
 
 
